@@ -1,2 +1,11 @@
 # biodiversity_shiny_app
 Biodiversity in USA National Parks shiny application (Demo)
+
+Biodiversity in USA National Parks shiny application (deployed live https://zek-data.shinyapps.io/biodiversity/) is a demo app that I have developed with public available data to demonstrate some of the features of R Shiny namely interactive menu for users to filters data, map to summarize and display geographic data, graph, data table, etc. The data used for the application are sourced from Kaggle and are available https://www.kaggle.com/nationalparkservice/park-biodiversity.
+
+Data are related to national Park species lists which provide information on the presence and status of species in the national parks in USA. Each park species record includes a species ID, park name, taxonomic information, scientific name, one or more common names, record status, occurrence (verification of species presence in park), etc. Kindly visit https://www.kaggle.com/nationalparkservice/park-biodiversity for more details about the data.
+
+The application is made of three main parts:
+- A species tab which allows the user to filter on specific park as well as species categories and get information about the total number of species, the number of species of concern and the number of endangered species (species classification according to US Fish & Wildlife Service) present in the park and corresponding to the selected filters. The tab also has a graph that show the repartition of species (number) for the selected categories of species and the selected park. Please note that all species categories are selected by default. Finally, the tab displays a data table that shows all the species corresponding to the selected filters.
+- A map tab which allows the user to filter on the park’s acreage. The park with an acreage between the acreage range selected are then displayed on a map and a pop-up message allows to identify these parks by their name.
+- A journal tab which allows the user to edit the journal data for the National Parks application. Indeed, the user can maintain a trip journal to the parks by entering information such as the trip name, the trip date, the park name, and comments. The tab allows the user to add new entry as well as edit or delete existing entry. The data are stored in a google sheet spreadsheet.
